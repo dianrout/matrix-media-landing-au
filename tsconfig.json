@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@public/*": ["public/*"],
+      "@public": ["public"],
+      "@api/*": ["services/api/*"],
+      "@api": ["services/api"],
+      "@components/*": ["components/*"],
+      "@components": ["components"],
+      "@interfaces/*": ["interfaces/*"],
+      "@interfaces": ["interfaces"],
+      "@store/*": ["store/*"],
+      "@store": ["store"],
+      "@services/*": ["services/*"],
+      "@services": ["services"],
+      "@styles/*": ["styles/*"],
+      "@styles": ["styles"]
+    },
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/components/Mediaplayer/index.tsx",
+    "container/reward-center/lucky-spin/MainSpinContainer.jsx"
+, "container/checkout/CheckoutButton.tsx"  ],
+  "exclude": ["node_modules"]
+}
