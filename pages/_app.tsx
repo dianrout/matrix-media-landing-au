@@ -19,22 +19,41 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <meta httpEquiv="content-language" content="en" />
         <meta name="robots" content="all" />
         <title>
-          Matrix Media - Leading the trend on social networking sites
+          HNTD Network - Pioneering the latest trends in social media.
         </title>
-        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <meta
+          name="title"
+          content={
+            "HNTD Network - Pioneering the latest trends in social media."
+          }
+        />
+        <meta
+          name="description"
+          content={
+            "With a source of highly entertaining and unique content, we are confident to deliver a good time of entertainment and top trending content on social networks to our audience."
+          }
+        />
+        <meta name="keywords" content={"hntd"} />
+        <meta
+          name="generator"
+          content={
+            "HNTD Network - Pioneering the latest trends in social media."
+          }
+        />
+        <link rel="icon" type="image/png" href="/favicon.ico" />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="/images/logo.png"
+          href="/favicon.ico"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="512x512"
-          href="/images/logo.png"
+          href="/favicon.ico"
         />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
       </Head>
 
       <Layouts>

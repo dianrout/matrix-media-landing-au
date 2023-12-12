@@ -21,14 +21,22 @@ const AboutUs = () => {
             >
               {t("common.about_us")}
             </h2>
-            <h1 className="text-text-orange text-[32px] uppercase Roboto-700 text-[32px] leading-[38px] pc:py-[32px] py-[16px] text-center sd:text-left">
+            <h1 className="text-text-red text-[32px] uppercase Roboto-700 text-[32px] leading-[38px] pc:py-[32px] py-[16px] text-center sd:text-left">
               Who we are
             </h1>
             <h2 className="flex-1 text-[16px] pc:text-[20px] text-color-label 2xl:text-[20px] leading-[30px] text-justify">
-              {t("common.about_us_1")}
+              {/* {t("common.about_us_1")} */}
+              Founded in October 2021, HNTD Network is a dynamic Multi-Platform
+              Media and Entertainment Company. Our core expertise lies in
+              Production, Content Creation, and the Promotion of Entertainment
+              Products across various digital platforms.
             </h2>
             <h2 className="flex-1 text-[16px] pc:text-[20px] text-color-label 2xl:text-[20px] leading-[30px] py-[24px] text-justify">
-              {t("common.about_us_2")}
+              {/* {t("common.about_us_2")} */}
+              With a dedicated team of talent and enthusiasm, we strive towards
+              our vision of providing captivating and refreshing entertainment
+              experiences. At HNTD Network, our commitment extends to global
+              viewers, ensuring our creative content leaves a lasting impact.
             </h2>
           </div>
         </div>

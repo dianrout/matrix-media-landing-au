@@ -9,7 +9,7 @@ const Service = () => {
       <div className="max-w-[1520px] m-auto flex">
         <div className="flex justify-between flex-col sd:flex-row items-center w-full mx-[40px] xs:mx-[16px] 2xl:mx-0 my-[50px] xs:mt-0 2xl:my-[90px] py-[48px]">
           <div className="max-w-[690px] text-left items-left w-full">
-            <h1 className="text-text-orange 2xl:text-[32px] text-[28px] uppercase leading-[38px] Roboto-700">
+            <h1 className="text-text-red 2xl:text-[32px] text-[28px] uppercase leading-[38px] Roboto-700">
               Services
             </h1>
             <div className="w-full h-[4px] bg-color-main my-[24px] sd:my-[32px]"></div>

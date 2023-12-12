@@ -67,16 +67,13 @@ const Footer = () => {
             <img
               src={Logo.src}
               alt="logo"
-              className=""
-              width={50}
+              className="h-[50px] w-auto"
+              // width={50}
               height={50}
               style={{
                 objectFit: "cover"
               }}
             />
-            <h1 className="text-[24px] font-bold ml-2 text-text-header">
-              Matrix Media
-            </h1>
           </div>
           <ul className="flex flex-col pc:flex-row gap-[2px] pc:items-center mt-4">
             {routes.map((item, index) => {
@@ -101,14 +98,17 @@ const Footer = () => {
               {t("common.contact_us")}
             </h2>
             <div className="flex gap-2 text-text-desc Roboto-500 text-[16px] leading-[27px] mb-[16px]">
-              <Iconphone className="w-[20px]" /> 0355024977
+              <Iconphone className="w-[20px]" /> 0327639182
             </div>
             <div className="flex gap-2 text-text-desc Roboto-500 text-[16px] leading-[27px] mb-[16px]">
               <IconEmail className="w-[20px]" />
-              <a href="mailto:someone@example.com">contact@matrixmedia.vn</a>
+              <a href="mailto:someone@example.com">
+                contact@hntdnetwork.com.au
+              </a>
             </div>
             <div className="flex gap-2 text-text-desc Roboto-500 text-[16px] leading-[27px]">
-              <IconHome className="w-[20px]" /> {t("common.address")}
+              <IconHome className="w-[20px]" /> 123 Ryrie Street, Geelong, Vic
+              3220
             </div>
           </div>
           <div className="flex flex-col pc:hidden xs:w-full">
@@ -148,7 +148,7 @@ const Footer = () => {
       </div>
       <div className="h-[1px] w-full my-[32px] bg-[#C2C2C2]"></div>
       <div className="bg-white text-left text-[#616161] pc:leading-[21px] flex justify-between">
-        Matrix Media @ 2023. All rights reserved.
+        HNTD Network @ 2023. All rights reserved.
         <div className="flex gap-4">
           <a className="cursor-pointer">
             <IconYoutube />

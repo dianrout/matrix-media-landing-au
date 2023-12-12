@@ -31,6 +31,8 @@ module.exports = {
         "text-main": "#757575",
         "text-desc": "#616161",
         "text-orange": "#FF6100",
+        "text-red": "#d31111",
+        "button-red": "#f04848",
         "text-title": "#282828",
         "color-border": "#E0E0E0",
         "color-label": "#424242",

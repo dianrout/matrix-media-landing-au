@@ -51,7 +51,7 @@ const AboutUsContent = () => {
             <img src={AchievementImage.src} alt="achievement" />
           </div>
           <div className="sd:max-w-[50%] pc:max-w-[690px] text-left items-left w-full list-menu">
-            <h1 className="text-text-orange 2xl:text-[32px] text-[28px] uppercase leading-[38px] Roboto-700">
+            <h1 className="text-text-red 2xl:text-[32px] text-[28px] uppercase leading-[38px] Roboto-700">
               {t("common.achievement")}
             </h1>
             <div className="w-full h-[4px] bg-color-main my-[32px]"></div>

@@ -3,6 +3,8 @@ import React, { useState } from "react"
 import BlogImage from "@public/images/blog-ex.png"
 import { useTranslation } from "next-i18next"
 import { useRouter } from "next/router"
+import Image from "next/image"
+import ImgEmpty from "@public/images/img-data-empty.png"
 
 const JobsContainer = () => {
   const { t } = useTranslation()
@@ -10,23 +12,23 @@ const JobsContainer = () => {
   const [page, setPage] = useState("1")
   const [activeTag, setActiveTag] = useState("All departments")
   const listTag = ["All departments", "marketing", "Design", "OTher"]
-  const listJob = [
-    {
-      name: "Content Creator",
-      category: "Design",
-      job: "Full-Time",
-      add: "Hà Nội",
-      duration: "30/9/2023",
-      id: "content-creator"
-    },
-    {
-      name: "Video Editor",
-      category: "Design",
-      job: "Full-Time",
-      add: "Hà Nội",
-      duration: "30/9/2023",
-      id: "video-editor"
-    }
+  const listJob: any = [
+    // {
+    //   name: "Content Creator",
+    //   category: "Design",
+    //   job: "Full-Time",
+    //   add: "Hà Nội",
+    //   duration: "30/9/2023",
+    //   id: "content-creator"
+    // },
+    // {
+    //   name: "Video Editor",
+    //   category: "Design",
+    //   job: "Full-Time",
+    //   add: "Hà Nội",
+    //   duration: "30/9/2023",
+    //   id: "video-editor"
+    // }
   ]
   return (
     <div className="w-full">
@@ -49,7 +51,7 @@ const JobsContainer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-[24px] mb-8">
-          {listJob.map((item, index) => {
+          {listJob?.map((item: any, index: number) => {
             return (
               <div
                 key={index}
@@ -57,7 +59,7 @@ const JobsContainer = () => {
               >
                 <div className="flex-1 pc:flex pc:items-center">
                   <div className="flex flex-col pc:w-[50%] mb-[16px] pc:mb-0">
-                    <h1 className="text-[36px] 2xl:text-[40px] Roboto-500 text-text-orange leading-[60px]">
+                    <h1 className="text-[36px] 2xl:text-[40px] Roboto-500 text-text-red leading-[60px]">
                       {item?.name}
                     </h1>
                     <h2 className="text-text-main text-[16px] uppercase Roboto-500 leading-[24px] ">
@@ -136,7 +138,7 @@ const JobsContainer = () => {
 
                 <div className="h-full w-[110px] xs:w-full">
                   <button
-                    className="uppercase text-white Roboto-500 leading-[21px] py-[8px] px-[24px] rounded-[8px] bg-text-orange w-full xs:mt-8" 
+                    className="uppercase text-white Roboto-500 leading-[21px] py-[8px] px-[24px] rounded-[8px] bg-text-red w-full xs:mt-8"
                     onClick={() => router.push(`jobs/${item.id}`)}
                   >
                     {t("common.apply")}
@@ -145,6 +147,10 @@ const JobsContainer = () => {
               </div>
             )
           })}
+          <div className="data-empty my-8 text-center px-6 col-span-3 m-auto">
+            <Image src={ImgEmpty} alt={""} className={`sm:max-w-[450px]`} />
+            <h4 className="my-4 NunitoSans-600 text-[20px]">No Data</h4>
+          </div>
         </div>
         <div className="flex justify-center">
           <Pagination total={2} pageIndex={1} setPageIndex={setPage} />

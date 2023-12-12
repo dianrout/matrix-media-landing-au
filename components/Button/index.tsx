@@ -24,7 +24,7 @@ const ButtonComponent = ({
   return (
     <button
       disabled={disabled || loading}
-      className={`flex items-center justify-center gap-4 Roboto-500 px-[24px] py-[8px] rounded-[8px] h-[48px] bg-[#FF6100] text-white text-[16px] leading-[150%] ${className} ${
+      className={`flex items-center justify-center gap-4 Roboto-500 px-[24px] py-[8px] rounded-[8px] h-[48px] bg-button-red text-white text-[16px] leading-[150%] ${className} ${
         (loading || disabled) && "opacity-70"
       }`}
       onFocus={onFocus}

@@ -48,14 +48,14 @@ const Project = () => {
     <div className="w-full flex justify-center">
       <div className="max-w-[1520px] m-auto flex flex-col xs:mx-[16px] mx-[40px] 2xl:mx-0 xs:my-[32px] my-[50px] 2xl:my-[90px] py-[48px] xs:py-[32px] w-full">
         <h2
-          className="text-center px-[16px] py-[8px] rounded-[4px] text-text-orange text-[16px] Roboto-500 uppercase leading-[24px] w-fit m-auto"
+          className="text-center px-[16px] py-[8px] rounded-[4px] text-text-red text-[16px] Roboto-500 uppercase leading-[24px] w-fit m-auto"
           style={{
             background: "rgba(255, 97, 0, 0.05)"
           }}
         >
           Project
         </h2>
-        <h1 className="text-text-orange text-[26px] pc:text-[32px] Roboto-700 leading-38px uppercase py-[24px] xs:pb-[16px] text-center">
+        <h1 className="text-text-red text-[26px] pc:text-[32px] Roboto-700 leading-38px uppercase py-[24px] xs:pb-[16px] text-center">
           What we did
         </h1>
         <h3 className="text-center mb-[54px] xs:mb-[44px] xs:px-[16px] text-color-label text-[16px] pc:text-[20px] md:leading-[30px]">
@@ -65,14 +65,14 @@ const Project = () => {
           <div className="relative mx-[40px] xs:mx-[16px]">
             <div className="xs:mb-[30px] m-auto flex gap-8 justify-center">
               <button
-                className="sm:absolute sm:left-[-20px] sm:top-[100px] xs: cursor-pointer bg-text-orange rounded-[10px] p-[10px]"
+                className="sm:absolute sm:left-[-20px] sm:top-[100px] xs: cursor-pointer bg-text-red rounded-[10px] p-[10px]"
                 ref={navigationPrevRef}
                 style={{ zIndex: 5 }}
               >
                 <IconArrowLeft />
               </button>
               <button
-                className="sm:absolute sm:right-[-20px] sm:top-[100px] cursor-pointer bg-text-orange rounded-[10px] p-[10px]"
+                className="sm:absolute sm:right-[-20px] sm:top-[100px] cursor-pointer bg-text-red rounded-[10px] p-[10px]"
                 ref={navigationNextRef}
                 style={{ zIndex: 5 }}
               >
@@ -145,7 +145,7 @@ const Project = () => {
         )}
 
         <div
-          className="text-text-orange m-auto mt-[56px] flex gap-4 uppercase text-[16px] Roboto-500 leading-[24px] items-center cursor-pointer w-fit"
+          className="text-text-red m-auto mt-[56px] flex gap-4 uppercase text-[16px] Roboto-500 leading-[24px] items-center cursor-pointer w-fit"
           onClick={() => router.push("/project")}
         >
           {t("common.view_all_project")}{" "}

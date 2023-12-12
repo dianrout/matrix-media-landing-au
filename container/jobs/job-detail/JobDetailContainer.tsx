@@ -81,7 +81,7 @@ const JobsDetailContainer = () => {
           <h3 className="text-text-main text-[16px] Roboto-500 uppercase leading-[24px] pb-[16px]">
             {jobDetail?.category}
           </h3>
-          <h1 className="text-text-orange text-[40px] Roboto-500 leading-[60px] pb-[24px]">
+          <h1 className="text-text-red text-[40px] Roboto-500 leading-[60px] pb-[24px]">
             {jobDetail?.name}
           </h1>
           <div className="flex gap-8 pb-[32px] xs:flex-wrap">

@@ -14,7 +14,7 @@ const Banner = () => {
       <div className="min-h-[100vh] max-w-[1520px] m-auto flex items-center justify-betweem px-[20px] sd:px-[40px] 2xl:px-0 gap-[40px] flex-col sd:flex-row pt-[110px] sd:pt-0">
         <div className="flex-1">
           <h1 className="text-[38px] sm:text-[42px] pc:text-[55px] 2xl:text-[64px] Roboto-600 xs:leading-[40px] leading-[60px] 2xl:leading-[80px] pb-[16px] 2xl:pb-[24px]">
-            Leading the trend on social networking sites
+            Pioneering the latest trends in social media
           </h1>
           <h2 className="xs:text-[14px] text-[16px] pc:text-[18px] 2xl:text-[20px] text-[#EDEDED] leading-[30px] pb-[20px] sm:pb-[40px] 2xl:pb-[44px] pr-[30px]">
             {t("common.banner_desc")}
@@ -31,7 +31,7 @@ const Banner = () => {
             ignoreCancelEvents={false}
           >
             <ButtonComponent className="uppercase w-fit py-[16px] text-[18px] leading-[27px] mb-[50px] sm:mb-[30px] 2xl:mb-[68px]">
-              {t("common.get_consult")}
+              Contact us
               <svg
                 width="24"
                 height="24"

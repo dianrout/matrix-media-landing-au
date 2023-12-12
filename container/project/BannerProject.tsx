@@ -5,7 +5,7 @@ const BannerProject = () => {
   const { t } = useTranslation()
   return (
     <div>
-      <h1 className="text-center  text-[32px] lg:text-[48px] Roboto-700 uppercase leading-[57px] pt-[45px] 2xl:pt-[75px] pb-[30px] 2xl:pb-[48px] text-text-orange">
+      <h1 className="text-center  text-[32px] lg:text-[48px] Roboto-700 uppercase leading-[57px] pt-[45px] 2xl:pt-[75px] pb-[30px] 2xl:pb-[48px] text-text-red">
         {t("common.project")}
       </h1>
       <div className="w-full bg-[#289B69] text-white">

@@ -2,10 +2,9 @@ import ButtonComponent from "@components/Button"
 import { useTranslation } from "next-i18next"
 import { useRouter } from "next/router"
 import Logo from "public/images/logo.png"
+import LogoLight from "public/images/logo-light.png"
 import { useEffect, useState } from "react"
-import {
-  Link
-} from "react-scroll"
+import { Link } from "react-scroll"
 import { useWindowSize } from "utils"
 import HeaderMobile from "./HeaderMobile"
 import SelectLanguage from "./Selectlanguage"
@@ -86,24 +85,21 @@ const Header = () => {
               onClick={() => router.push("/")}
             >
               <img
-                src={Logo.src}
+                src={navbar || other ? Logo.src : LogoLight.src}
                 alt="logo"
-                className=""
-                width={50}
+                className="h-[50px] w-auto"
+                // width={50}
                 height={50}
                 style={{
                   objectFit: "cover"
                 }}
               />
-              <h1 className="text-white text-[24px] font-bold ml-2 text-header">
-                Matrix Media
-              </h1>
             </div>
             <ul className="flex flex-wrap gap-[2px] items-center">
               {routes.map((item, index) => {
                 return (
                   <li
-                    className="header__item text-[#E0E0E0] w-fit px-[16px] py-[8px] cursor-pointer hover:text-[#FF8134] Roboto-500 text-[18px] leading-[150%] mt-1 text-menu"
+                    className="header__item text-[#E0E0E0] w-fit px-[16px] py-[8px] cursor-pointer hover:text-button-red Roboto-500 text-[18px] leading-[150%] mt-1 text-menu"
                     onClick={() => router.push(item.router)}
                     data-activeid={
                       router.pathname === item.router ? "active" : ""
@@ -132,7 +128,7 @@ const Header = () => {
                 />
               </svg>
             </div>
-            <SelectLanguage />
+            {/* <SelectLanguage /> */}
             <Link
               activeClass="active"
               to="contactUs"

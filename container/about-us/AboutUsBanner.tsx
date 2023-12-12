@@ -9,7 +9,7 @@ const AboutUsBanner = () => {
   const { t } = useTranslation()
   return (
     <div className="2xl:pb-[120px] pb-[60px]">
-      <h1 className="text-center text-[32px] pc:text-[48px] Roboto-700 uppercase leading-[57px] pt-[45px] 2xl:pt-[75px] pb-[30px] 2xl:pb-[48px] text-text-orange">
+      <h1 className="text-center text-[32px] pc:text-[48px] Roboto-700 uppercase leading-[57px] pt-[45px] 2xl:pt-[75px] pb-[30px] 2xl:pb-[48px] text-text-red">
         {t("common.about_us")}
       </h1>
       <img

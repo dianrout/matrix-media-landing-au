@@ -62,16 +62,13 @@ const HeaderMobile = ({ id, visible, setVisible }: any) => {
             <img
               src={Logo.src}
               alt="logo"
-              className=""
-              width={50}
+              className="h-[50px]"
+              // width={50}
               height={50}
               style={{
                 objectFit: "cover"
               }}
             />
-            <h1 className="text-white text-[24px] font-bold ml-2 text-header xs:hidden">
-              Matrix Media
-            </h1>
           </div>
         </div>
         <div className="flex items-center gap-[32px] xs:gap-4">
@@ -89,7 +86,7 @@ const HeaderMobile = ({ id, visible, setVisible }: any) => {
               />
             </svg>
           </div>
-          <SelectLanguage />
+          {/* <SelectLanguage /> */}
           <div className="text-menu" onClick={() => setVisible(true)}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -139,9 +136,7 @@ const HeaderMobile = ({ id, visible, setVisible }: any) => {
                   objectFit: "cover"
                 }}
               />
-              <h1 className="text-text-main text-[16px] font-bold ml-2 xs:hidden">
-                Matrix Media
-              </h1>
+              
             </div>
             <button className="block text-4xl">
               <span
@@ -158,7 +153,7 @@ const HeaderMobile = ({ id, visible, setVisible }: any) => {
               {routes.map((item, index) => {
                 return (
                   <li
-                    className="header__item text-text-main w-fit px-[16px] py-[8px] cursor-pointer hover:text-[#FF8134] Roboto-500 text-[18px] leading-[150%] mt-1 pl-[8px]"
+                    className="header__item text-text-main w-fit px-[16px] py-[8px] cursor-pointer hover:text-button-red Roboto-500 text-[18px] leading-[150%] mt-1 pl-[8px]"
                     onClick={() => {
                       router.push(item.router)
                       onClose()
