@@ -54,7 +54,7 @@ const AboutUsContent = () => {
             <h1 className="text-text-red 2xl:text-[32px] text-[28px] uppercase leading-[38px] Roboto-700">
               {t("common.achievement")}
             </h1>
-            <div className="w-full h-[4px] bg-color-main my-[32px]"></div>
+            <div className="w-full h-[4px] bg-text-red my-[32px]"></div>
             <ul>
               <li className="text-color-label text-[20px] Roboto-500 leading-[30px] pb-[6px]">
                 {t("common.achievement_1")}

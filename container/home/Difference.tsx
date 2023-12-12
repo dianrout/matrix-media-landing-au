@@ -29,7 +29,7 @@ const Differences = () => {
     <div
       className="w-full flex justify-center"
       style={{
-        background: "rgba(255, 221, 163, 0.20)"
+        background: "rgba(250, 155, 155, 0.14)"
       }}
     >
       <div className="max-w-[1520px] m-auto flex-col xs:mx-[16px] mx-[40px] 2xl:mx-0 my-[50px] 2xl:py-[60px] py-[48px] w-full">
@@ -52,12 +52,12 @@ const Differences = () => {
                 <div
                   className="m-auto mb-[32px] rounded-[20px] w-[106px] h-[106px] flex items-center justify-center"
                   style={{
-                    background: "rgba(250, 191, 155, 0.14)"
+                    background: "rgba(250, 155, 155, 0.14)"
                   }}
                 >
                   {item.icon}
                 </div>
-                <h1 className="text-text-title text-[24px] text-center Roboto-600 leading-[36px] pb-[16px]">
+                <h1 className="text-button-red text-[24px] text-center Roboto-600 leading-[36px] pb-[16px]">
                   {item.name}
                 </h1>
                 <h2 className="text-text-main text-[18px] leading-[27px] text-center pb-[24px]">

@@ -44,7 +44,7 @@ const ProjectList = () => {
               />
             </div>
             <div className="flex-1">
-              <h1 className="text-[26px] 2xl:text-[32px] Roboto-700 pb-[16px]">
+              <h1 className="text-[26px] 2xl:text-[32px] Roboto-700 pb-[16px] text-button-red">
                 {project.title}
               </h1>
               <h2 className="text-text-main uppercase text-[26px]  2xl:text-[30px] pb-[16px]">

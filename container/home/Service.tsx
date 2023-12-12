@@ -12,7 +12,7 @@ const Service = () => {
             <h1 className="text-text-red 2xl:text-[32px] text-[28px] uppercase leading-[38px] Roboto-700">
               Services
             </h1>
-            <div className="w-full h-[4px] bg-color-main my-[24px] sd:my-[32px]"></div>
+            <div className="w-full h-[4px] bg-button-red my-[24px] sd:my-[32px]"></div>
             <h1 className="text-color-label text-[22px] sd:text-[32px] Roboto-600 pb-[32px]">
               {t("common.service_desc")}
             </h1>
