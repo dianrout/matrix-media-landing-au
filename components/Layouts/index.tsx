@@ -42,11 +42,11 @@ const Layouts: React.FC<ILayout> = ({ children }) => {
 
   return (
     <div className="page-wrapper">
-      <Header />
+      {/* <Header /> */}
       <div className="page-content">{children}</div>
-      <Footer />
+      {/* <Footer /> */}
 
-      <div
+      {/* <div
         className={`block fixed bottom-[100px] right-[80px] w-[50px] h-[50px] rounded-[10px] ml-auto mr-0 border border-[#9E9E9E] bg-white/80 cursor-pointer p-[13px] ${
           scrollbtn ? "" : "hidden"
         }`}
@@ -69,7 +69,7 @@ const Layouts: React.FC<ILayout> = ({ children }) => {
             />
           </g>
         </svg>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -17,6 +17,8 @@
     "paths": {
       "@public/*": ["public/*"],
       "@public": ["public"],
+      "@assets/*": ["public/assets/*"],
+      "@assets": ["public/assets"],
       "@api/*": ["services/api/*"],
       "@api": ["services/api"],
       "@components/*": ["components/*"],
@@ -43,7 +45,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/components/Mediaplayer/index.tsx",
-    "container/reward-center/lucky-spin/MainSpinContainer.jsx"
-, "container/checkout/CheckoutButton.tsx"  ],
+    "container/reward-center/lucky-spin/MainSpinContainer.jsx",
+    "container/checkout/CheckoutButton.tsx"
+  ],
   "exclude": ["node_modules"]
 }

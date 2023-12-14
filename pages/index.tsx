@@ -11,9 +11,9 @@ interface IPageProps {}
 const Home: React.FC<IPageProps> = () => {
   return (
     <div>
-      <Banner />
+      {/* <Banner /> */}
 
-      <HomeContent />
+      <HomeContent />0
     </div>
   )
 }
