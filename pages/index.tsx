@@ -9,23 +9,18 @@ import React from "react"
 interface IPageProps {}
 
 const Home: React.FC<IPageProps> = () => {
-  return (
-    <div>
-      <Banner />
-
-      <HomeContent />
-    </div>
-  )
+  return <HomeContent />
 }
 
-export const getServerSideProps: GetServerSideProps = async ({
-  locale
-}: Params) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"]))
-    }
-  }
-}
+// export const getServerSideProps: GetServerSideProps = async ({
+//   locale
+// }: Params) => {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, ["common"]))
+//     }
+//   }
+// }
 
-export default withTranslation("common")(Home)
+// export default withTranslation("common")(Home)
+export default Home

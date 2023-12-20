@@ -4,7 +4,7 @@ import "@styles/app.scss"
 import type { AppProps } from "next/app"
 import Head from "next/head"
 import { Provider } from "react-redux"
-import "tailwindcss/tailwind.css"
+// import "tailwindcss/tailwind.css"
 import Layouts from "@components/Layouts"
 import store from "store/store"
 import { appWithTranslation } from "next-i18next"
@@ -41,18 +41,8 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           }
         />
         <link rel="icon" type="image/png" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/favicon.ico"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="512x512"
-          href="/favicon.ico"
-        />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
       </Head>
 
