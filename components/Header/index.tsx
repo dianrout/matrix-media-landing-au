@@ -99,7 +99,7 @@ const Header = () => {
               {routes.map((item, index) => {
                 return (
                   <li
-                    className="header__item text-[#E0E0E0] w-fit px-[16px] py-[8px] cursor-pointer hover:text-button-red Roboto-500 text-[18px] leading-[150%] mt-1 text-menu"
+                    className="header__item text-[#E0E0E0] w-fit px-[16px] py-[8px] cursor-pointer hover:text-button-red Mulish-500 text-[18px] leading-[150%] mt-1 text-menu"
                     onClick={() => router.push(item.router)}
                     data-activeid={
                       router.pathname === item.router ? "active" : ""

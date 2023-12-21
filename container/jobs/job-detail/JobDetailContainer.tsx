@@ -78,29 +78,29 @@ const JobsDetailContainer = () => {
     <div className="w-full">
       <div className="max-w-[1520px] m-auto px-[20px] md:px-[40px] 2xl:px-0 pt-[40px] 2xl:pt-[60px] pb-[76px] relative flex justify-between flex-col pc:flex-row">
         <div className="pc:max-w-[874px]">
-          <h3 className="text-text-main text-[16px] Roboto-500 uppercase leading-[24px] pb-[16px]">
+          <h3 className="text-text-main text-[16px] Mulish-500 uppercase leading-[24px] pb-[16px]">
             {jobDetail?.category}
           </h3>
-          <h1 className="text-text-red text-[40px] Roboto-500 leading-[60px] pb-[24px]">
+          <h1 className="text-text-red text-[40px] Mulish-500 leading-[60px] pb-[24px]">
             {jobDetail?.name}
           </h1>
           <div className="flex gap-8 pb-[32px] xs:flex-wrap">
             <div className="flex gap-2 text-color-label text-[16px] xs:w-[50%]">
-              <h3 className="Roboto-600">{t("common.job_type")}</h3>
+              <h3 className="Mulish-600">{t("common.job_type")}</h3>
               {jobDetail?.job}
             </div>
             <div className="flex gap-2 text-color-label text-[16px]">
-              <h3 className="Roboto-600">{t("common.add")}</h3>
+              <h3 className="Mulish-600">{t("common.add")}</h3>
               {jobDetail?.add}
             </div>
             <div className="flex gap-2 text-color-label text-[16px]">
-              <h3 className="Roboto-600">{t("common.duration")}</h3>
+              <h3 className="Mulish-600">{t("common.duration")}</h3>
               {jobDetail?.duration}
             </div>
           </div>
 
           <div className="mb-[32px] job-menu">
-            <h1 className="text-[#0A0A0A] text-[20px] Roboto-500 leading-[30px] mb-4">
+            <h1 className="text-[#0A0A0A] text-[20px] Mulish-500 leading-[30px] mb-4">
               {t("common.request")}
             </h1>
             <ul>
@@ -117,7 +117,7 @@ const JobsDetailContainer = () => {
             </ul>
           </div>
           <div className="mb-[32px] job-menu">
-            <h1 className="text-[#0A0A0A] text-[20px] Roboto-500 leading-[30px] mb-4">
+            <h1 className="text-[#0A0A0A] text-[20px] Mulish-500 leading-[30px] mb-4">
               {t("common.benifit")}
             </h1>
             <ul>
@@ -134,7 +134,7 @@ const JobsDetailContainer = () => {
             </ul>
           </div>
           <div className="mb-[32px] job-menu">
-            <h1 className="text-[#0A0A0A] text-[20px] Roboto-500 leading-[30px] mb-4">
+            <h1 className="text-[#0A0A0A] text-[20px] Mulish-500 leading-[30px] mb-4">
               {t("common.time_and_place")}
             </h1>
             <ul>
@@ -152,27 +152,27 @@ const JobsDetailContainer = () => {
           </div>
         </div>
         <div className="pc:sticky p-[32px] xs:py-[24px] xs:px-[16px] bg-white rounded-[20px] h-fit pc:max-w-[423px] pc:top-[100px] pc:right-0">
-          <h1 className="text-[#0A0A0A] text-[24px] Roboto-600 leading-[36px] pb-2">
+          <h1 className="text-[#0A0A0A] text-[24px] Mulish-600 leading-[36px] pb-2">
             {t("common.job_application")}
           </h1>
           <h2 className="text-color-label text-[20px] leading-[30px] pb-[32px]">
             {t("common.fill_the_form")}
           </h2>
-          <label className="text-color-label text-[16px] Roboto-500 leading-[24px] mb-4">
+          <label className="text-color-label text-[16px] Mulish-500 leading-[24px] mb-4">
             {t("common.label_name")}
           </label>
           <input
             placeholder={t("common.label_name")}
             className="text-[16px] px-[16px] py-[12px] outline-0 border rounded-[8px] w-full mt-2 mb-5"
           ></input>
-          <label className="text-color-label text-[16px] Roboto-500 leading-[24px] mb-4">
+          <label className="text-color-label text-[16px] Mulish-500 leading-[24px] mb-4">
             {t("common.email")}
           </label>
           <input
             placeholder={t("common.email")}
             className="text-[16px] px-[16px] py-[12px] outline-0 border rounded-[8px] w-full mt-2 mb-5"
           ></input>
-          <label className="text-color-label text-[16px] Roboto-500 leading-[24px] mb-4">
+          <label className="text-color-label text-[16px] Mulish-500 leading-[24px] mb-4">
             {t("common.upload_cv")}
           </label>
           <div

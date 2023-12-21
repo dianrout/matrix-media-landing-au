@@ -48,14 +48,14 @@ const Project = () => {
     <div className="w-full flex justify-center">
       <div className="max-w-[1520px] m-auto flex flex-col xs:mx-[16px] mx-[40px] 2xl:mx-0 xs:my-[32px] my-[50px] 2xl:my-[90px] py-[48px] xs:py-[32px] w-full">
         <h2
-          className="text-center px-[16px] py-[8px] rounded-[4px] text-text-red text-[16px] Roboto-500 uppercase leading-[24px] w-fit m-auto"
+          className="text-center px-[16px] py-[8px] rounded-[4px] text-text-red text-[16px] Mulish-500 uppercase leading-[24px] w-fit m-auto"
           style={{
             background: "rgba(255, 97, 0, 0.05)"
           }}
         >
           Project
         </h2>
-        <h1 className="text-text-red text-[26px] pc:text-[32px] Roboto-700 leading-38px uppercase py-[24px] xs:pb-[16px] text-center">
+        <h1 className="text-text-red text-[26px] pc:text-[32px] Mulish-700 leading-38px uppercase py-[24px] xs:pb-[16px] text-center">
           What we did
         </h1>
         <h3 className="text-center mb-[54px] xs:mb-[44px] xs:px-[16px] text-color-label text-[16px] pc:text-[20px] md:leading-[30px]">
@@ -110,10 +110,10 @@ const Project = () => {
                         alt="project"
                         className="rounded-[12px] mb-[32px]"
                       />
-                      <h3 className="text-text-main pb-[12px] text-[16px] Roboto-500 leading-[24px] uppercase">
+                      <h3 className="text-text-main pb-[12px] text-[16px] Mulish-500 leading-[24px] uppercase">
                         {project.name}
                       </h3>
-                      <h1 className="text-[#0A0A0A] text-[24px] leading-[36px] Roboto-600">
+                      <h1 className="text-[#0A0A0A] text-[24px] leading-[36px] Mulish-600">
                         {project.title}
                       </h1>
                     </div>
@@ -132,10 +132,10 @@ const Project = () => {
                     alt="project"
                     className="rounded-[12px] mb-[32px]"
                   />
-                  <h3 className="text-text-main pb-[12px] text-[16px] Roboto-500 leading-[24px] uppercase">
+                  <h3 className="text-text-main pb-[12px] text-[16px] Mulish-500 leading-[24px] uppercase">
                     {project.name}
                   </h3>
-                  <h1 className="text-[#0A0A0A] text-[24px] leading-[36px] Roboto-600">
+                  <h1 className="text-[#0A0A0A] text-[24px] leading-[36px] Mulish-600">
                     {project.title}
                   </h1>
                 </div>
@@ -145,7 +145,7 @@ const Project = () => {
         )}
 
         <div
-          className="text-text-red m-auto mt-[56px] flex gap-4 uppercase text-[16px] Roboto-500 leading-[24px] items-center cursor-pointer w-fit"
+          className="text-text-red m-auto mt-[56px] flex gap-4 uppercase text-[16px] Mulish-500 leading-[24px] items-center cursor-pointer w-fit"
           onClick={() => router.push("/project")}
         >
           {t("common.view_all_project")}{" "}

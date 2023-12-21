@@ -79,7 +79,7 @@ const Footer = () => {
             {routes.map((item, index) => {
               return (
                 <li
-                  className="header__item text-text-main w-fit pc:px-[16px] py-[8px] cursor-pointer hover:text-button-red Roboto-500 text-[18px] leading-[150%] mt-1 first:pl-0 last:pr-0"
+                  className="header__item text-text-main w-fit pc:px-[16px] py-[8px] cursor-pointer hover:text-button-red Mulish-500 text-[18px] leading-[150%] mt-1 first:pl-0 last:pr-0"
                   onClick={() => router.push(item.router)}
                   data-activeid={
                     router.pathname === item.router ? "active" : ""
@@ -94,25 +94,25 @@ const Footer = () => {
         </div>
         <div className="flex flex-col pc:flex-row xs:w-full">
           <div className="mb-[32px] mt-4 pc:mt-0">
-            <h2 className="text-[16px] Roboto-600 leading-[24px] mb-[16px]">
+            <h2 className="text-[16px] Mulish-600 leading-[24px] mb-[16px]">
               {t("common.contact_us")}
             </h2>
-            <div className="flex gap-2 text-text-desc Roboto-500 text-[16px] leading-[27px] mb-[16px]">
+            <div className="flex gap-2 text-text-desc Mulish-500 text-[16px] leading-[27px] mb-[16px]">
               <Iconphone className="w-[20px]" /> 0327639182
             </div>
-            <div className="flex gap-2 text-text-desc Roboto-500 text-[16px] leading-[27px] mb-[16px]">
+            <div className="flex gap-2 text-text-desc Mulish-500 text-[16px] leading-[27px] mb-[16px]">
               <IconEmail className="w-[20px]" />
               <a href="mailto:someone@example.com">
                 contact@hntdnetwork.com.au
               </a>
             </div>
-            <div className="flex gap-2 text-text-desc Roboto-500 text-[16px] leading-[27px]">
+            <div className="flex gap-2 text-text-desc Mulish-500 text-[16px] leading-[27px]">
               <IconHome className="w-[20px]" /> 123 Ryrie Street, Geelong, Vic
               3220
             </div>
           </div>
           <div className="flex flex-col pc:hidden xs:w-full">
-            <h2 className="text-[16px] Roboto-600 leading-[24px] mb-[16px]">
+            <h2 className="text-[16px] Mulish-600 leading-[24px] mb-[16px]">
               {t("common.join_our_letter")}
             </h2>
             <div className="flex gap-4 w-full">
@@ -127,7 +127,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="hidden pc:flex pc:flex-col">
-          <h2 className="text-[16px] Roboto-600 leading-[24px] mb-[16px]">
+          <h2 className="text-[16px] Mulish-600 leading-[24px] mb-[16px]">
             {t("common.join_our_letter")}
           </h2>
           <div className="flex gap-4">

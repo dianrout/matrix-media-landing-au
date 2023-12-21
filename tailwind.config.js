@@ -25,6 +25,9 @@ module.exports = {
         "8px": "8px"
       },
       colors: {
+        primary: "#D31111",
+        secondary: "#2D7A56",
+        gray: "#2F2F2F",
         "main-color": "#0088cc",
         "main-bg-color": "#EFEFFF",
         "text-header": "#697077",

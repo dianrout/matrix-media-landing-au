@@ -13,7 +13,7 @@ const Banner = () => {
     <div className="w-full bg-[#289B69] text-white">
       <div className="min-h-[100vh] max-w-[1520px] m-auto flex items-center justify-betweem px-[20px] sd:px-[40px] 2xl:px-0 gap-[40px] flex-col sd:flex-row pt-[110px] sd:pt-0">
         <div className="flex-1">
-          <h1 className="text-[38px] sm:text-[42px] pc:text-[55px] 2xl:text-[64px] Roboto-600 xs:leading-[40px] leading-[60px] 2xl:leading-[80px] pb-[16px] 2xl:pb-[24px]">
+          <h1 className="text-[38px] sm:text-[42px] pc:text-[55px] 2xl:text-[64px] Mulish-600 xs:leading-[40px] leading-[60px] 2xl:leading-[80px] pb-[16px] 2xl:pb-[24px]">
             Pioneering the latest trends in social media
           </h1>
           <h2 className="xs:text-[14px] text-[16px] pc:text-[18px] 2xl:text-[20px] text-[#EDEDED] leading-[30px] pb-[20px] sm:pb-[40px] 2xl:pb-[44px] pr-[30px]">
@@ -48,7 +48,7 @@ const Banner = () => {
               </svg>
             </ButtonComponent>
           </Link>
-          <h2 className="text-[16px] pc:text-[20px] 2xl:text-[24px] text-[#EDEDED] Roboto-500 leading-[24px] uppercase pb-4">
+          <h2 className="text-[16px] pc:text-[20px] 2xl:text-[24px] text-[#EDEDED] Mulish-500 leading-[24px] uppercase pb-4">
             {t("common.our_partner")}
           </h2>
           <div>

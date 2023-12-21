@@ -42,7 +42,7 @@ const JobsContainer = () => {
                   onClick={() => setActiveTag(tag)}
                   className={`py-[8px] px-[24px] rounded-[8px] cursor-pointer ${
                     tag === activeTag && "text-color-label bg-[#EDEDED]"
-                  } text-text-main text-[16px] Roboto-500 uppercase leading-[24px] hover:text-color-label hover:bg-[#EDEDED]`}
+                  } text-text-main text-[16px] Mulish-500 uppercase leading-[24px] hover:text-color-label hover:bg-[#EDEDED]`}
                 >
                   {tag}
                 </li>
@@ -59,10 +59,10 @@ const JobsContainer = () => {
               >
                 <div className="flex-1 pc:flex pc:items-center">
                   <div className="flex flex-col pc:w-[50%] mb-[16px] pc:mb-0">
-                    <h1 className="text-[36px] 2xl:text-[40px] Roboto-500 text-text-red leading-[60px]">
+                    <h1 className="text-[36px] 2xl:text-[40px] Mulish-500 text-text-red leading-[60px]">
                       {item?.name}
                     </h1>
-                    <h2 className="text-text-main text-[16px] uppercase Roboto-500 leading-[24px] ">
+                    <h2 className="text-text-main text-[16px] uppercase Mulish-500 leading-[24px] ">
                       {item?.category}
                     </h2>
                   </div>
@@ -138,7 +138,7 @@ const JobsContainer = () => {
 
                 <div className="h-full w-[110px] xs:w-full">
                   <button
-                    className="uppercase text-white Roboto-500 leading-[21px] py-[8px] px-[24px] rounded-[8px] bg-text-red w-full xs:mt-8"
+                    className="uppercase text-white Mulish-500 leading-[21px] py-[8px] px-[24px] rounded-[8px] bg-text-red w-full xs:mt-8"
                     onClick={() => router.push(`jobs/${item.id}`)}
                   >
                     {t("common.apply")}

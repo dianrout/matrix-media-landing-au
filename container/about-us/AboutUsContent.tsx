@@ -15,7 +15,7 @@ const AboutUsContent = () => {
         <div className="flex justify-between justify-center w-full mb-[144px] gap-[20px] flex-col sd:flex-row">
           <div className="sd:max-w-[50%] lg:max-w-[670px] mb-[30px] sd:mb-[30px]">
             <IconMission className="m-auto mb-[24px]" />
-            <h1 className="text-center pb-[16px] 2xl:text-[32px] text-[28px] uppercase Roboto-700">
+            <h1 className="text-center pb-[16px] 2xl:text-[32px] text-[28px] uppercase Mulish-700">
               {t("common.mission")}
             </h1>
             <h2 className="2xl:text-[24px] text-[20px] leading-[30px] text-text-main text-center">
@@ -24,7 +24,7 @@ const AboutUsContent = () => {
           </div>
           <div className="sd:max-w-[50%] lg:max-w-[670px]">
             <IconVision className="m-auto mb-[24px]" />
-            <h1 className="text-center pb-[16px] 2xl:text-[32px] text-[28px] uppercase Roboto-700">
+            <h1 className="text-center pb-[16px] 2xl:text-[32px] text-[28px] uppercase Mulish-700">
               {t("common.vision")}
             </h1>
             <h2 className="2xl:text-[24px] text-[20px] leading-[30px] text-text-main text-center">
@@ -35,7 +35,7 @@ const AboutUsContent = () => {
         <div className="flex justify-between items-center w-full flex-col sd:flex-row">
           <div className="sd:max-w-[50%] pc:max-w-[670px]">
             <IconOurTeam className="m-auto mb-[24px]" />
-            <h1 className="text-center pb-[16px] 2xl:text-[32px] text-[28px] uppercase Roboto-700">
+            <h1 className="text-center pb-[16px] 2xl:text-[32px] text-[28px] uppercase Mulish-700">
               {t("common.our_team")}
             </h1>
             <h2 className="2xl:text-[24px] text-[20px] leading-[30px] text-text-main text-center">
@@ -51,26 +51,26 @@ const AboutUsContent = () => {
             <img src={AchievementImage.src} alt="achievement" />
           </div>
           <div className="sd:max-w-[50%] pc:max-w-[690px] text-left items-left w-full list-menu">
-            <h1 className="text-text-red 2xl:text-[32px] text-[28px] uppercase leading-[38px] Roboto-700">
+            <h1 className="text-text-red 2xl:text-[32px] text-[28px] uppercase leading-[38px] Mulish-700">
               {t("common.achievement")}
             </h1>
             <div className="w-full h-[4px] bg-text-red my-[32px]"></div>
             <ul>
-              <li className="text-color-label text-[20px] Roboto-500 leading-[30px] pb-[6px]">
+              <li className="text-color-label text-[20px] Mulish-500 leading-[30px] pb-[6px]">
                 {t("common.achievement_1")}
               </li>
               <h3 className="text-text-main 2xl:text-[18px] text-[16px] leading-[27px] pb-[24px]">
                 {t("common.achievement_1_desc")}
               </h3>
 
-              <li className="text-color-label text-[20px] Roboto-500 leading-[30px] pb-[6px]">
+              <li className="text-color-label text-[20px] Mulish-500 leading-[30px] pb-[6px]">
                 {t("common.achievement_2")}
               </li>
               <h3 className="text-text-main 2xl:text-[18px] text-[16px] leading-[27px] pb-[24px]">
                 {t("common.achievement_2_desc")}
               </h3>
 
-              <li className="text-color-label text-[20px] Roboto-500 leading-[30px] pb-[6px]">
+              <li className="text-color-label text-[20px] Mulish-500 leading-[30px] pb-[6px]">
                 {t("common.achievement_3")}
               </li>
               <h3 className="text-text-main 2xl:text-[18px] text-[16px] leading-[27px] pb-[24px]">

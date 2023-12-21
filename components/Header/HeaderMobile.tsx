@@ -136,7 +136,6 @@ const HeaderMobile = ({ id, visible, setVisible }: any) => {
                   objectFit: "cover"
                 }}
               />
-              
             </div>
             <button className="block text-4xl">
               <span
@@ -153,7 +152,7 @@ const HeaderMobile = ({ id, visible, setVisible }: any) => {
               {routes.map((item, index) => {
                 return (
                   <li
-                    className="header__item text-text-main w-fit px-[16px] py-[8px] cursor-pointer hover:text-button-red Roboto-500 text-[18px] leading-[150%] mt-1 pl-[8px]"
+                    className="header__item text-text-main w-fit px-[16px] py-[8px] cursor-pointer hover:text-button-red Mulish-500 text-[18px] leading-[150%] mt-1 pl-[8px]"
                     onClick={() => {
                       router.push(item.router)
                       onClose()

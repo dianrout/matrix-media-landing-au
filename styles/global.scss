@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Roboto-400", sans-serif;
+  font-family: "Mulish-400", sans-serif;
   font-size: 14px;
   background: #fafafa;
   color: black;
@@ -12,7 +12,7 @@ body {
 }
 
 .page-content {
-  min-height: 600px;
+  min-height: calc(100vh - 100px);
 }
 
 .hover-light {
@@ -276,28 +276,28 @@ body {
   text-overflow: ellipsis;
 }
 
-.Roboto-800 {
-  font-family: Roboto-800, serif !important;
+.Mulish-800 {
+  font-family: Mulish-800, serif !important;
 }
 
-.Roboto-700 {
-  font-family: Roboto-700, serif !important;
+.Mulish-700 {
+  font-family: Mulish-700, serif !important;
 }
 
-.Roboto-600 {
-  font-family: Roboto-600, serif !important;
+.Mulish-600 {
+  font-family: Mulish-600, serif !important;
 }
 
-.Roboto-500 {
-  font-family: Roboto-500, serif !important;
+.Mulish-500 {
+  font-family: Mulish-500, serif !important;
 }
 
-.Roboto-400 {
-  font-family: Roboto-400, serif !important;
+.Mulish-400 {
+  font-family: Mulish-400, serif !important;
 }
 
-.Roboto-300 {
-  font-family: Roboto-300, serif !important;
+.Mulish-300 {
+  font-family: Mulish-300, serif !important;
 }
 
 .absolute-center {

@@ -9,7 +9,7 @@ const AboutUsBanner = () => {
   const { t } = useTranslation()
   return (
     <div className="2xl:pb-[120px] pb-[60px]">
-      <h1 className="text-center text-[32px] pc:text-[48px] Roboto-700 uppercase leading-[57px] pt-[45px] 2xl:pt-[75px] pb-[30px] 2xl:pb-[48px] text-text-red">
+      <h1 className="text-center text-[32px] pc:text-[48px] Mulish-700 uppercase leading-[57px] pt-[45px] 2xl:pt-[75px] pb-[30px] 2xl:pb-[48px] text-text-red">
         {t("common.about_us")}
       </h1>
       <img
@@ -20,7 +20,7 @@ const AboutUsBanner = () => {
       <div className="w-full bg-[#289B69] text-white">
         <div className="max-w-[1520px] m-auto py-[30px] 2xl:py-[60px] px-[40px] xs:px-[20px] 2xl:px-0 flex flex-col pc:flex-row justify-between lg:gap-[48px]">
           <div className="w-[40%] pc:mx-auto">
-            <h1 className="text-[32px] pc:text-[48px] leading-[58px] uppercase Roboto-700 pc:text-center 2xl:text-left">
+            <h1 className="text-[32px] pc:text-[48px] leading-[58px] uppercase Mulish-700 pc:text-center 2xl:text-left">
               Who we are
             </h1>
           </div>
@@ -34,7 +34,7 @@ const AboutUsBanner = () => {
             <h2 className="flex-1  text-[16px] sm:text-[20px] text-[#EDEDED] 2xl:text-[24px] leading-[36px] pb-[30px] 2xl:pb-[60px]">
               {t("common.about_us_3")}
             </h2>
-            <h2 className="text-[24px] text-white Roboto-500 leading-[24px] uppercase pb-4">
+            <h2 className="text-[24px] text-white Mulish-500 leading-[24px] uppercase pb-4">
               {t("common.our_partner")}
             </h2>
             <div>

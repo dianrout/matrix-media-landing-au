@@ -34,14 +34,14 @@ const Differences = () => {
     >
       <div className="max-w-[1520px] m-auto flex-col xs:mx-[16px] mx-[40px] 2xl:mx-0 my-[50px] 2xl:py-[60px] py-[48px] w-full">
         <h2
-          className="w-fit text-center m-auto py-[8px] px-[16px] rounded-[4px] text-[#2D7A56] uppercase text-[16px] Roboto-500 leading-[24px] mb-[34px]"
+          className="w-fit text-center m-auto py-[8px] px-[16px] rounded-[4px] text-[#2D7A56] uppercase text-[16px] Mulish-500 leading-[24px] mb-[34px]"
           style={{
             background: "rgba(45, 122, 86, 0.05)"
           }}
         >
           differences
         </h2>
-        <h1 className="text-center text-[#2D7A56] text-[32px] Roboto-700 leading-[38px] uppercase 2xl:mb-[80px] mb-[60px]">
+        <h1 className="text-center text-[#2D7A56] text-[32px] Mulish-700 leading-[38px] uppercase 2xl:mb-[80px] mb-[60px]">
           What makes us different
         </h1>
         <div className="flex justify-center sd:justify-around flex-col sd:flex-row gap-[30px] sd:gap-5">
@@ -57,7 +57,7 @@ const Differences = () => {
                 >
                   {item.icon}
                 </div>
-                <h1 className="text-button-red text-[24px] text-center Roboto-600 leading-[36px] pb-[16px]">
+                <h1 className="text-button-red text-[24px] text-center Mulish-600 leading-[36px] pb-[16px]">
                   {item.name}
                 </h1>
                 <h2 className="text-text-main text-[18px] leading-[27px] text-center pb-[24px]">

@@ -14,14 +14,14 @@ const AboutUs = () => {
           </div>
           <div className="sd:max-w-[50%] 2xl:max-w-[745px]">
             <h2
-              className="py-[8px] px-[16px] text-[#2D7A56] uppercase text-[16px] Roboto-500 leading-[24px] w-fit m-auto sd:m-0"
+              className="py-[8px] px-[16px] text-[#2D7A56] uppercase text-[16px] Mulish-500 leading-[24px] w-fit m-auto sd:m-0"
               style={{
                 background: "rgba(45, 122, 86, 0.05)"
               }}
             >
               {t("common.about_us")}
             </h2>
-            <h1 className="text-text-red text-[32px] uppercase Roboto-700 text-[32px] leading-[38px] pc:py-[32px] py-[16px] text-center sd:text-left">
+            <h1 className="text-text-red text-[32px] uppercase Mulish-700 text-[32px] leading-[38px] pc:py-[32px] py-[16px] text-center sd:text-left">
               Who we are
             </h1>
             <h2 className="flex-1 text-[16px] pc:text-[20px] text-color-label 2xl:text-[20px] leading-[30px] text-justify">

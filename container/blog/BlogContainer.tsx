@@ -26,7 +26,7 @@ const BlogContainer = () => {
                   onClick={() => setActiveTag(tag)}
                   className={`py-[8px] px-[24px] rounded-[8px] cursor-pointer ${
                     tag === activeTag && "text-color-label bg-[#EDEDED]"
-                  } text-text-main text-[16px] Roboto-500 uppercase leading-[24px] hover:text-color-label hover:bg-[#EDEDED]`}
+                  } text-text-main text-[16px] Mulish-500 uppercase leading-[24px] hover:text-color-label hover:bg-[#EDEDED]`}
                 >
                   {tag}
                 </li>
@@ -43,10 +43,10 @@ const BlogContainer = () => {
                   alt="blog"
                   className="max-h-[280px] object-cover rounded-[12px]"
                 />
-                <h2 className="pt-[32px] text-text-main text-[16px] upperccase Roboto-500 pb-[12px]">
+                <h2 className="pt-[32px] text-text-main text-[16px] upperccase Mulish-500 pb-[12px]">
                   20/02/2023 - 15:05
                 </h2>
-                <h1 className="text-ellipsis-claim mb-[32px] text-[#0A0A0A] text-[24px] Roboto-600 leading-[36px] ">
+                <h1 className="text-ellipsis-claim mb-[32px] text-[#0A0A0A] text-[24px] Mulish-600 leading-[36px] ">
                   Professor McGonagall wealdy verry long name of project
                   professor McGonagall wealdy verry long name of project
                 </h1>

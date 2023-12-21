@@ -52,7 +52,7 @@ const ContactUs = () => {
       <div className="pc:mx-[40px] xs:px-[16px] 2xl:mx-0 mb-[100px] 2xl:mb-[178px]">
         <div className="max-w-[1520px] contact-us py-[40px] 2xl:py-[80px] px-[40px] xs:px-[16px] md:px-[60px] 2xl:px-[130px] pc:rounded-[16px] xs:rounded-[8px] m-auto flex flex-col sm:flex-row justify-between gap-4">
           <div className="flex-1 sm:max-w-[548px] xl:max-w-[745px] w-full">
-            <h1 className="text-text-title text-[28px] xs:text-[26px] 2xl:text-[32px] Roboto-700 leading-[38px] uppercase pb-[8px] 2xl:pb-[16px]">
+            <h1 className="text-text-title text-[28px] xs:text-[26px] 2xl:text-[32px] Mulish-700 leading-[38px] uppercase pb-[8px] 2xl:pb-[16px]">
               {t("common.contact_us")}
             </h1>
             <h2 className="text-text-desc xs:text-[16px] 2xl:text-[20px] text-[18px] leading-[30px] pb-[30px]">
@@ -60,7 +60,7 @@ const ContactUs = () => {
             </h2>
             <div className="flex gap-[24px] mb-[20px] xs:flex-row flex-col md:flex-row">
               <div className="w-full">
-                <label className="text-[16px] Roboto-500 leading-[24px] text-color-label mb-[8px]">
+                <label className="text-[16px] Mulish-500 leading-[24px] text-color-label mb-[8px]">
                   {t("common.company_name")}
                 </label>
                 <input
@@ -71,7 +71,7 @@ const ContactUs = () => {
                 ></input>
               </div>
               <div className="w-full">
-                <label className="text-[16px] Roboto-500 leading-[24px] text-color-label mb-[8px]">
+                <label className="text-[16px] Mulish-500 leading-[24px] text-color-label mb-[8px]">
                   {t("common.your_name")}
                 </label>
                 <input
@@ -84,7 +84,7 @@ const ContactUs = () => {
             </div>
             <div className="flex gap-[24px] mb-[20px] xs:flex-row flex-col md:flex-row">
               <div className="w-full">
-                <label className="text-[16px] Roboto-500 leading-[24px] text-color-label mb-[8px]">
+                <label className="text-[16px] Mulish-500 leading-[24px] text-color-label mb-[8px]">
                   {t("common.email")}
                   <span className="text-[#FF0060] ml-1">*</span>
                 </label>
@@ -96,7 +96,7 @@ const ContactUs = () => {
                 ></input>
               </div>
               <div className="w-full">
-                <label className="text-[16px] Roboto-500 leading-[24px] text-color-label mb-[8px]">
+                <label className="text-[16px] Mulish-500 leading-[24px] text-color-label mb-[8px]">
                   {t("common.phone_number")}
                 </label>
                 <input
@@ -108,7 +108,7 @@ const ContactUs = () => {
               </div>
             </div>
             <div className="mb-[32px]">
-              <label className="text-[16px] Roboto-500 leading-[24px] text-color-label mb-[8px]">
+              <label className="text-[16px] Mulish-500 leading-[24px] text-color-label mb-[8px]">
                 {t("common.message")}
               </label>
               <textarea
