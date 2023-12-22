@@ -11,6 +11,12 @@ body {
   font-weight: 400;
 }
 
+.page-wrapper {
+  background-image: url("./../public/img/background.png");
+  background-repeat: repeat-y;
+  background-size: 1920px cover;
+}
+
 .page-content {
   min-height: calc(100vh - 100px);
 }
