@@ -46,19 +46,11 @@ const Project = () => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="max-w-[1520px] m-auto flex flex-col xs:mx-[16px] mx-[40px] 2xl:mx-0 xs:my-[32px] my-[50px] 2xl:my-[90px] py-[48px] xs:py-[32px] w-full">
-        <h2
-          className="text-center px-[16px] py-[8px] rounded-[4px] text-text-red text-[16px] Mulish-500 uppercase leading-[24px] w-fit m-auto"
-          style={{
-            background: "rgba(255, 97, 0, 0.05)"
-          }}
-        >
+      <div className="max-w-[1520px] m-auto flex flex-col xs:mx-[16px] mx-[40px] 2xl:mx-0 xs:my-[32px] my-[50px] 2xl:my-[60px] py-[48px] xs:py-[32px] w-full">
+        <h2 className="text-center mb-[32px] text-primary text-[48px] pc:text-[52px] xl:text-[62px] Mulish-800 uppercase leading-[90px] w-fit m-auto">
           Project
         </h2>
-        <h1 className="text-text-red text-[26px] pc:text-[32px] Mulish-700 leading-38px uppercase py-[24px] xs:pb-[16px] text-center">
-          What we did
-        </h1>
-        <h3 className="text-center mb-[54px] xs:mb-[44px] xs:px-[16px] text-color-label text-[16px] pc:text-[20px] md:leading-[30px]">
+        <h3 className="text-center max-w-[1050px] m-auto mb-[104px] xs:mb-[44px] xs:px-[16px] text-[] pc:text-[22px] md:leading-[30px]">
           {t("common.project_home_desc")}
         </h3>
         {isTablet ? (
@@ -126,18 +118,20 @@ const Project = () => {
           <div className="grid grid-cols-3 gap-[24px]">
             {listProject.map((project, id) => {
               return (
-                <div key={id} className="w-full">
+                <div key={id} className="w-full bg-[#EBF8F3] rounded-[36px]">
                   <img
                     src={project.image.src}
                     alt="project"
-                    className="rounded-[12px] mb-[32px]"
+                    className="rounded-[36px]"
                   />
-                  <h3 className="text-text-main pb-[12px] text-[16px] Mulish-500 leading-[24px] uppercase">
-                    {project.name}
-                  </h3>
-                  <h1 className="text-[#0A0A0A] text-[24px] leading-[36px] Mulish-600">
-                    {project.title}
-                  </h1>
+                  <div className="px-[30px] py-[20px]">
+                    <h3 className="text-secondary pb-[12px] text-[22px] Mulish-700 leading-[24px] uppercase">
+                      {project.name}
+                    </h3>
+                    <h1 className="text-[#0A0A0A] text-[24px] leading-[36px] Mulish-600">
+                      {project.title}
+                    </h1>
+                  </div>
                 </div>
               )
             })}
