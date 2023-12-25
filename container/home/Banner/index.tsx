@@ -18,12 +18,7 @@ const Banner = () => {
           "linear-gradient(180deg, rgba(216, 254, 239, 0.30) 0%, rgba(219, 248, 237, 0.00) 94.42%)"
       }}
     >
-      <div
-        className="relative max-w-[1600px] m-auto flex items-center justify-betweem px-[20px] sd:px-[40px] 2xl:px-0 gap-[40px] flex-col sd:flex-row pt-[80px] sd:pt-0"
-        style={{
-          minHeight: "max(calc(100vh - 90px), 880px)"
-        }}
-      >
+      <div className="relative max-w-[1600px] m-auto flex items-center justify-betweem px-[20px] sd:px-[40px] 2xl:px-0 gap-[40px] flex-col sd:flex-row pt-[80px] sd:pt-0 banner">
         <img
           src={BannerImage2.src}
           alt="banner2"
@@ -140,30 +135,8 @@ const Banner = () => {
             alt="banner3"
             className="hidden md:block absolute bottom-[0px] right-[0px]"
           />
-
-          {/* <h2 className="text-[16px] pc:text-[20px] 2xl:text-[24px] text-[#EDEDED] Mulish-500 leading-[24px] uppercase pb-4">
-            {t("common.our_partner")}
-          </h2> */}
-          {/* <div>
-            <div className="card cursor-pointer">
-              <img src={Partner1.src} alt="Card Back" />
-              <img
-                src={Partner1Hover.src}
-                className="img-top"
-                alt="Card Front"
-              />
-            </div>
-            <div className="card cursor-pointer">
-              <img src={Partner2.src} alt="Card Back" />
-              <img
-                src={Partner2Hover.src}
-                className="img-top"
-                alt="Card Front"
-              />
-            </div>
-          </div> */}
         </div>
-        <div className="sm:max-w-[50%] pc:max-w-[100%] relative">
+        <div className="sm:max-w-[50%] relative">
           <img src={BannerImage.src} alt="banner" className="z-2" />
           <img
             src={BannerImage1.src}

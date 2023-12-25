@@ -1,77 +1,64 @@
-import IconDf1 from "@public/images/icons/IconDf1"
-import IconDf2 from "@public/images/icons/IconDf2"
-import IconDf3 from "@public/images/icons/IconDf3"
 import { useTranslation } from "next-i18next"
-import Line from "@public/images/line.png"
+import { useRouter } from "next/router"
+import BgDifferent from "public/img/bg-different.png"
 
 const Differences = () => {
   const { t } = useTranslation()
+  const router = useRouter()
 
   const listDf = [
     {
-      icon: <IconDf1 />,
+      order: "01",
       name: t("common.df_title_1"),
       desc: t("common.df_desc_1")
     },
     {
-      icon: <IconDf2 />,
+      order: "02",
       name: t("common.df_title_2"),
       desc: t("common.df_desc_2")
     },
     {
-      icon: <IconDf3 />,
+      order: "03",
       name: t("common.df_title_3"),
       desc: t("common.df_desc_3")
+    },
+    {
+      order: "04",
+      name: "multi-platform",
+      desc: "We create on many different platforms."
     }
   ]
 
   return (
-    <div
-      className="w-full flex justify-center"
-      style={{
-        background: "rgba(250, 155, 155, 0.14)"
-      }}
-    >
-      <div className="max-w-[1520px] m-auto flex-col xs:mx-[16px] mx-[40px] 2xl:mx-0 my-[50px] 2xl:py-[60px] py-[48px] w-full">
-        <h2
-          className="w-fit text-center m-auto py-[8px] px-[16px] rounded-[4px] text-[#2D7A56] uppercase text-[16px] Mulish-500 leading-[24px] mb-[34px]"
-          style={{
-            background: "rgba(45, 122, 86, 0.05)"
-          }}
-        >
-          differences
-        </h2>
-        <h1 className="text-center text-[#2D7A56] text-[32px] Mulish-700 leading-[38px] uppercase 2xl:mb-[80px] mb-[60px]">
-          What makes us different
+    <div className="max-w-[1520px] m-auto flex gap-[50px] px-[20px]">
+      <div className="bg-different max-w-[550px] h-[609px] w-full rounded-[20px] flex flex-col justify-center m-auto px-[40px]">
+        <h1 className="lg:text-[50px] text-[35px] text-white Mulish-800 lg:leading-[55px] pb-[20px]">
+          Discover the Unique Side of Social Network
         </h1>
-        <div className="flex justify-center sd:justify-around flex-col sd:flex-row gap-[30px] sd:gap-5">
-          {" "}
-          {listDf.map((item, id) => {
-            return (
-              <div key={id} className="relative sd:max-w-[350px]">
-                <div
-                  className="m-auto mb-[32px] rounded-[20px] w-[106px] h-[106px] flex items-center justify-center"
-                  style={{
-                    background: "rgba(250, 155, 155, 0.14)"
-                  }}
-                >
-                  {item.icon}
-                </div>
-                <h1 className="text-button-red text-[24px] text-center Mulish-600 leading-[36px] pb-[16px]">
-                  {item.name}
-                </h1>
-                <h2 className="text-text-main text-[18px] leading-[27px] text-center pb-[24px]">
-                  {item.desc}
-                </h2>
-                {id !== 2 && (
-                  <div className="absolute lg:block hidden xl:top-[16px] lg:top-[10px] 1xl:top-[8px] xl:right-[-200px] lg:right-[-125px] 1xl:right-[-250px] xl:max-w-[300px] 1xl:max-w-[350px] lg:max-w-[200px]">
-                    <img src={Line.src} alt="line" />
-                  </div>
-                )}
-              </div>
-            )
-          })}
+        <p className="text-[20px] md:leading-[30px] xs:text-[18px] pb-[30px] text-white">
+          HNTD Network always tries to bring the best quality content
+        </p>
+        <div
+          className="w-[180px] h-[60px] md:w-[200px] md:h-[70px] rounded-[64px] text-center items-center flex justify-center bg-white text-[#2F2F2F] text-[20px] Mulish-600 leading-[30px] cursor-pointer relative"
+          onClick={() => router.push("/contact-us")}
+        >
+          Get Started
         </div>
+      </div>
+      <div className="flex-1 grid grid-cols-2 grid-rows-2 gap-x-[30px]">
+        {listDf.map((item, id) => {
+          return (
+            <div key={id} className="">
+              <p className="text-[50px] Mulish-800 pb-[24px] pt-2 text-primary">
+                {item.order}
+              </p>
+              <h1 className="text-[30px] Mulish-700 leading-[33px] pb-[10px] ">
+                {item.name}
+              </h1>
+              <h2 className="text-[20px] text-[#808080]">{item.desc}</h2>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
