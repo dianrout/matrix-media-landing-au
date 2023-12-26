@@ -6,7 +6,7 @@ const AboutUs = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="w-full bg-about-us">
+    <div className="w-full">
       <div className="max-w-[1520px] m-auto">
         <div className="px-[40px] xs:px-[16px] 2xl:my-[144px] mt-[50px] py-[48px] 2xl:px-0 flex justify-between flex flex-col sd:flex-row items-center gap-[40px]">
           <div className="max-w-[432px]">

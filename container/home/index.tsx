@@ -7,6 +7,7 @@ import Project from "./Project"
 import Service from "./Service"
 import Partner from "./Partner"
 import Connect from "./Connect"
+import Article from "./Article"
 
 const HomeContent = () => {
   return (
@@ -15,9 +16,10 @@ const HomeContent = () => {
       <Service />
       <Connect />
       <Differences />
-      <ContactUs />
       <Project />
-      <Partner />
+      <Article />
+      <ContactUs />
+      {/* <Partner /> */}
     </div>
   )
 }

@@ -37,6 +37,7 @@ body {
 
 .bg-different {
   background-image: url("./../public/img/bg-different.png");
+  background-size: cover;
 }
 
 @media (max-width: 1439px) {
