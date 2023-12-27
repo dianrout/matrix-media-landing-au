@@ -8,6 +8,7 @@ import "tailwindcss/tailwind.css"
 import Layouts from "@components/Layouts"
 import store from "store/store"
 import { appWithTranslation } from "next-i18next"
+import SEOBanner from "public/images/banner.png"
 
 interceptor($http, store)
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
@@ -21,6 +22,9 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <title>
           HNTD Network - Pioneering the latest trends in social media.
         </title>
+        <meta property="og:image" content={SEOBanner.src} />
+        <meta property="twitter:image" content={SEOBanner.src} />
+        <meta property="twitter:image:src" content={SEOBanner.src} />
         <meta
           name="title"
           content={
@@ -41,18 +45,8 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           }
         />
         <link rel="icon" type="image/png" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/favicon.ico"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="512x512"
-          href="/favicon.ico"
-        />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
       </Head>
 
