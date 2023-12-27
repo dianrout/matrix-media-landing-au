@@ -29,7 +29,7 @@ const Article = () => {
   const listArticle = [
     {
       image: Article1,
-      title: "Detailed insights for your social media",
+      title: "Detailed Insights For Your Social Media",
       created: "December 05, 2021",
       time: 3,
       category: ["Analyze", "Marketing"],
@@ -37,7 +37,7 @@ const Article = () => {
     },
     {
       image: Article2,
-      title: "New Device Invention for Digital Platform",
+      title: "New Device Invention For Digital Platform",
       created: "December 05, 2021",
       category: ["Analyze"],
       time: 3,
