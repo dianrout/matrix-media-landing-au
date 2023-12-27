@@ -1,21 +1,26 @@
 import { useTranslation } from "next-i18next"
-import ServiceImage from "@public/images/Service.png"
+import ServiceImage from "@public/img/service.png"
+import ServiceImage2 from "@public/img/service2.png"
+import Image01 from "@public/img/01.png"
+import Image02 from "@public/img/02.png"
 
 const Service = () => {
   const { t } = useTranslation()
 
   return (
     <div className="w-full">
-      <div className="max-w-[1520px] m-auto flex">
-        <div className="flex justify-between flex-col sd:flex-row items-center w-full mx-[40px] xs:mx-[16px] 2xl:mx-0 my-[50px] xs:mt-0 2xl:my-[90px] py-[48px]">
-          <div className="max-w-[690px] text-left items-left w-full">
-            <h1 className="text-text-red 2xl:text-[32px] text-[28px] uppercase leading-[38px] Mulish-700">
-              Services
-            </h1>
-            <div className="w-full h-[4px] bg-button-red my-[24px] sd:my-[32px]"></div>
-            <h1 className="text-color-label text-[22px] sd:text-[32px] Mulish-600 pb-[32px]">
-              {t("common.service_desc")}
-            </h1>
+      <div className="max-w-[1520px] m-auto">
+        <h2 className="text-center mb-[32px] text-primary text-[48px] pc:text-[52px] xl:text-[62px] Mulish-800 uppercase leading-[60px] sm:leading-[90px] w-fit m-auto">
+          Service
+        </h2>
+        <div className="flex justify-between items-center px-[20px] mb-[50px] flex-col-reverse md:flex-row ">
+          <div className="w-full">
+            <div className="relative w-full mb-[20px]">
+              <img src={Image01.src} className="lg:translate-x-4" />
+              <p className="text-[32px] Mulish-800 text-[#EC5656] absolute bottom-[8px] w-full">
+                {t("common.service_desc")}
+              </p>
+            </div>
             <ul>
               <li className="text-color-label text-[20px] Mulish-500 leading-[30px] pb-[6px] flex gap-2 items-center">
                 <svg
@@ -72,10 +77,31 @@ const Service = () => {
                 {t("common.tiktok_desc")}
               </h3>
             </ul>
-            <div className="w-full h-[1px] bg-color-border"></div>
           </div>
-          <div className="">
-            <img src={ServiceImage.src} alt="achievement" />
+          <div className="md:max-w-[50%] flex items-center w-full">
+            <img src={ServiceImage.src} />
+          </div>
+        </div>
+        <div className="flex justify-between items-center mb-[100px] px-[20px] gap-[20px]  flex-col md:flex-row">
+          <div className="md:max-w-[50%] flex items-center justify-center w-full">
+            <img
+              src={ServiceImage2.src}
+              className="max-w-[80%] mb-[50px] md:mb-0 md:max-w-[100%]"
+            />
+          </div>
+
+          <div className="w-full flex-1">
+            <div className="relative w-full mb-[20px] flex justify-end">
+              <img src={Image02.src} />
+              <p className="text-[32px] Mulish-800 text-[#EC5656] absolute bottom-[8px] w-full right-0 text-right">
+                Content Creation & Production
+              </p>
+            </div>
+            <h3 className="text-text-main 2xl:text-[18px] text-[16px] leading-[27px] pb-[24px] text-right">
+              We focus on building and coordinating new entertainment trends
+              while creating monetization models based on user behavior and
+              platform algorithms.
+            </h3>
           </div>
         </div>
       </div>

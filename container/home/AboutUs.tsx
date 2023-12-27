@@ -1,5 +1,5 @@
 import React from "react"
-import ABoutUsImage from "@public/images/home-about-us.png"
+import ABoutUsImage from "@public/img/Aboutus.png"
 import { useTranslation } from "next-i18next"
 
 const AboutUs = () => {
@@ -8,23 +8,23 @@ const AboutUs = () => {
   return (
     <div className="w-full">
       <div className="max-w-[1520px] m-auto">
-        <div className="px-[40px] xs:px-[16px] 2xl:my-[144px] mt-[50px] py-[48px] 2xl:px-0 flex justify-between flex flex-col sd:flex-row items-center gap-[40px]">
-          <div className="max-w-[432px]">
+        <h2 className="text-center mt-[100px] pb-0 sd:mt-[50px] text-primary text-[48px] pc:text-[52px] xl:text-[62px] Mulish-800 uppercase leading-[60px] sm:leading-[90px] w-fit m-auto">
+          Who <span className="text-secondary">we are</span>
+        </h2>
+        <div className="px-[40px] xs:px-[16px] 2xl:mb-[50px] pt-0 sd:py-[48px] 2xl:px-0 flex justify-between flex flex-col sd:flex-row items-center gap-[40px]">
+          <div className="sd:max-w-[50%] w-full">
             <img src={ABoutUsImage.src} alt="about-us" />
           </div>
           <div className="sd:max-w-[50%] 2xl:max-w-[745px]">
             <h2
-              className="py-[8px] px-[16px] text-[#2D7A56] uppercase text-[16px] Mulish-500 leading-[24px] w-fit m-auto sd:m-0"
+              className="py-[8px] px-[16px] text-[#2D7A56] uppercase text-[16px] Mulish-500 leading-[24px] w-fit sd:m-0"
               style={{
                 background: "rgba(45, 122, 86, 0.05)"
               }}
             >
-              {t("common.about_us")}
+              About us
             </h2>
-            <h1 className="text-text-red text-[32px] uppercase Mulish-700 text-[32px] leading-[38px] pc:py-[32px] py-[16px] text-center sd:text-left">
-              Who we are
-            </h1>
-            <h2 className="flex-1 text-[16px] pc:text-[20px] text-color-label 2xl:text-[20px] leading-[30px] text-justify">
+            <h2 className="flex-1 text-[16px] pc:text-[20px] text-color-label 2xl:text-[20px] leading-[30px] text-justify pt-[50px]">
               {/* {t("common.about_us_1")} */}
               Founded in October 2021, HNTD Network is a dynamic Multi-Platform
               Media and Entertainment Company. Our core expertise lies in
