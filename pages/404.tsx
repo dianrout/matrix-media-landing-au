@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next"
+import { GetServerSideProps } from "next"
 import { withTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { Params } from "next/dist/shared/lib/router/utils/route-matcher"
@@ -21,7 +21,8 @@ const FourOhFour = () => {
             />
             <div className="flex gap-2 w-full justify-between">
               <p className="text-gray text-[25px] Mulish-800 max-w-[436px]">
-                This page <span className="text-primary">doesn't exist</span> or
+                This page{" "}
+                <span className="text-primary">doesn&apos;t exist</span> or
                 removed! We suggest you back to home
               </p>
               <Link
@@ -38,7 +39,9 @@ const FourOhFour = () => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }: Params) => {
+export const getStaticProps: GetServerSideProps = async ({
+  locale
+}: Params) => {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"]))
