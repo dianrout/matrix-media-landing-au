@@ -1,65 +1,85 @@
 import { Pagination } from "@components/Pagination"
 import React, { useState } from "react"
 import BlogImage from "@public/images/blog-ex.png"
-
+import Article1 from "public/img/article/article-1.png"
+import Article2 from "public/img/article/article-2.png"
+import Article3 from "public/img/article/article-3.png"
 import ImgEmpty from "@public/images/img-data-empty.png"
 import Image from "next/image"
 
 const BlogContainer = () => {
   const [page, setPage] = useState("1")
-  const [activeTag, setActiveTag] = useState("All content")
-  const listTag = [
-    "All content",
-    "Youtube tag 1",
-    "Facebook tag 1",
-    "Seo tag 1"
+  const listArticle = [
+    {
+      image: Article1,
+      title: "Detailed Insights For Your Social Media",
+      created: "December 05, 2021",
+      time: 3,
+      category: ["Analyze", "Marketing"],
+      desc: "Gain profound understanding of your social media performance, with detailed analytics on interactions, audience demographics, and emerging trends to optimize your online strategy."
+    },
+    {
+      image: Article2,
+      title: "New Device Invention For Digital Platform",
+      created: "December 05, 2021",
+      category: ["Analyze"],
+      time: 3,
+      desc: "Introducing an innovative device for the digital platform, revolutionizing user experience with cutting-edge technology and enhanced functionalities."
+    },
+    {
+      image: Article3,
+      title: "Business Strategy Make His Goal Acheive",
+      created: "December 05, 2021",
+      category: ["Analyze", "Marketing"],
+      time: 3,
+      desc: "Crafting a potent business strategy to actualize goals, ensuring effective execution and success in achieving the envisioned objectives."
+    }
   ]
   return (
     <div className="w-full">
       <div className="max-w-[1520px] m-auto px-[20px] sd:px-[40px] 2xl:px-0 pt-[24px] pb-[76px]">
-        <div className="w-full">
-          <ul className="flex m-auto gap-1 mb-[32px] sm:justify-center xs:whitespace-nowrap xs:overflow-x-scroll xs:overflow-y-hidden xs:w-max xs:max-w-[100%]">
-            {listTag.map((tag, index) => {
-              return (
-                <li
-                  key={index}
-                  onClick={() => setActiveTag(tag)}
-                  className={`py-[8px] px-[24px] rounded-[8px] cursor-pointer ${
-                    tag === activeTag && "text-color-label bg-[#EDEDED]"
-                  } text-text-main text-[16px] Mulish-500 uppercase leading-[24px] hover:text-color-label hover:bg-[#EDEDED]`}
-                >
-                  {tag}
-                </li>
-              )
-            })}
-          </ul>
-        </div>
-        <div className="grid grid-col-1 sm:grid-cols-2 pc:grid-cols-3 gap-[24px]">
-          {[].map((item, index) => {
+        <div className="grid sd:grid-cols-2 gap-[47px]">
+          {listArticle.map((article, id) => {
             return (
-              <div key={index}>
-                <img
-                  src={BlogImage.src}
-                  alt="blog"
-                  className="max-h-[280px] object-cover rounded-[12px]"
-                />
-                <h2 className="pt-[32px] text-text-main text-[16px] upperccase Mulish-500 pb-[12px]">
-                  20/02/2023 - 15:05
-                </h2>
-                <h1 className="text-ellipsis-claim mb-[32px] text-[#0A0A0A] text-[24px] Mulish-600 leading-[36px] ">
-                  Professor McGonagall wealdy verry long name of project
-                  professor McGonagall wealdy verry long name of project
+              <div
+                key={id}
+                className="w-full flex flex-col p-[20px] sd:p-[40px] rounded-[20px] sd:rounded-[50px] bg-[#F9F9F9]"
+              >
+                <div className="relative">
+                  <img
+                    src={article.image.src}
+                    alt="project"
+                    className="rounded-[20px] w-full h-[370px] object-cover"
+                  />
+                  <div className="flex gap-4 absolute left-[20px] bottom-[20px]">
+                    {article.category.map((item, index) => {
+                      return (
+                        <p
+                          key={index}
+                          className="bg-[#fff] px-[30px] py-[13px] rounded-[30px] text-[18px] Mulish-600"
+                        >
+                          {item}
+                        </p>
+                      )
+                    })}
+                  </div>
+                </div>
+                <div className="flex justify-between py-[25px] text-[20px] text-[#808080] border-b-[1px] border-[#DCDCDC]">
+                  <p>{article.created}</p>
+                  <p>{article.time} min read</p>
+                </div>
+                <h1 className="text-[30px] Mulish-700 py-[20px]">
+                  {article.title}
                 </h1>
+                <p className="text-[20px] text-[#808080] pb-[10px]">
+                  {article.desc}
+                </p>
+                <p className="text-primary underline text-[20px] Mulish-600 mt-auto mb-0 cursor-pointer pt-[20px]">
+                  View More
+                </p>
               </div>
             )
           })}
-          <div className="data-empty my-8 text-center px-6 col-span-3 m-auto">
-            <Image src={ImgEmpty} alt={""} className={`sm:max-w-[450px]`} />
-            <h4 className="my-4 NunitoSans-600 text-[20px]">No Data</h4>
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <Pagination total={1} pageIndex={1} setPageIndex={setPage} />
         </div>
       </div>
     </div>

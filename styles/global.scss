@@ -71,8 +71,15 @@ body {
 }
 .block-banner {
   width: 100%;
-  background: #fafafa 50%;
-  background-image: url(./../public/images/blog-banner.png);
+  background: #fff 50%;
+  background-image: url(./../public/img/bg-job.png);
+  background-repeat: no-repeat;
+}
+
+.block-contact-us {
+  width: 100%;
+  background: #fff 50%;
+  background-image: url(./../public/img/bg-contact-us.png);
   background-repeat: no-repeat;
 }
 

@@ -1,6 +1,4 @@
-import AboutUsBanner from "container/about-us/AboutUsBanner"
-import AboutUsContent from "container/about-us/AboutUsContent"
-import BusinessNumber from "container/about-us/BusinessNumber"
+import ContactUsContainer from "container/contact-us"
 import { GetServerSideProps } from "next"
 import { withTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
@@ -9,12 +7,10 @@ import React from "react"
 
 interface IPageProps {}
 
-const AboutUsPage: React.FC<IPageProps> = () => {
+const ContactUsPage: React.FC<IPageProps> = () => {
   return (
     <div>
-      <AboutUsBanner />
-      <BusinessNumber />
-      <AboutUsContent />
+      <ContactUsContainer />
     </div>
   )
 }
@@ -29,4 +25,4 @@ export const getServerSideProps: GetServerSideProps = async ({
   }
 }
 
-export default withTranslation("common")(AboutUsPage)
+export default withTranslation("common")(ContactUsPage)

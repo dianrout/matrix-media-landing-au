@@ -130,38 +130,31 @@ const Header = () => {
                 />
               </svg>
             </div>
-            <Link
-              activeClass="active"
-              to="contactUs"
-              spy={true}
-              smooth={true}
-              hashSpy={true}
-              offset={-100}
-              duration={1000}
-              isDynamic={true}
-              ignoreCancelEvents={false}
+            <div
+              className="px-[24px] py-[12px] rounded-[44px] bg-[#EBF8F3] flex gap-[8px] text-[16px] leading-[24px] text-secondary border-secondary border border-secondary cursor-pointer"
+              onClick={() => {
+                router.push("/contact-us")
+              }}
             >
-              <div className="px-[24px] py-[12px] rounded-[44px] bg-[#EBF8F3] flex gap-[8px] text-[16px] leading-[24px] text-secondary border-secondary border border-secondary cursor-pointer">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <path
-                    d="M20.9712 8.5C20.9712 8.5 16.95 13.5 12 13.5C7.05 13.5 3.02878 8.5 3.02878 8.5M7.8 19.5H16.2C17.8802 19.5 18.7202 19.5 19.362 19.173C19.9265 18.8854 20.3854 18.4265 20.673 17.862C21 17.2202 21 16.3802 21 14.7V10.3C21 8.61984 21 7.77976 20.673 7.13803C20.3854 6.57354 19.9265 6.1146 19.362 5.82698C18.7202 5.5 17.8802 5.5 16.2 5.5H7.8C6.11984 5.5 5.27976 5.5 4.63803 5.82698C4.07354 6.1146 3.6146 6.57354 3.32698 7.13803C3 7.77976 3 8.61984 3 10.3V14.7C3 16.3802 3 17.2202 3.32698 17.862C3.6146 18.4265 4.07354 18.8854 4.63803 19.173C5.27976 19.5 6.11984 19.5 7.8 19.5Z"
-                    stroke="#2D7A56"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <p className="text-[16px] uppercase Mulish-500">
-                  {t("common.contact_us")}
-                </p>
-              </div>
-            </Link>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <path
+                  d="M20.9712 8.5C20.9712 8.5 16.95 13.5 12 13.5C7.05 13.5 3.02878 8.5 3.02878 8.5M7.8 19.5H16.2C17.8802 19.5 18.7202 19.5 19.362 19.173C19.9265 18.8854 20.3854 18.4265 20.673 17.862C21 17.2202 21 16.3802 21 14.7V10.3C21 8.61984 21 7.77976 20.673 7.13803C20.3854 6.57354 19.9265 6.1146 19.362 5.82698C18.7202 5.5 17.8802 5.5 16.2 5.5H7.8C6.11984 5.5 5.27976 5.5 4.63803 5.82698C4.07354 6.1146 3.6146 6.57354 3.32698 7.13803C3 7.77976 3 8.61984 3 10.3V14.7C3 16.3802 3 17.2202 3.32698 17.862C3.6146 18.4265 4.07354 18.8854 4.63803 19.173C5.27976 19.5 6.11984 19.5 7.8 19.5Z"
+                  stroke="#2D7A56"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p className="text-[16px] uppercase Mulish-500">
+                {t("common.contact_us")}
+              </p>
+            </div>
           </div>
         </div>
       ) : (

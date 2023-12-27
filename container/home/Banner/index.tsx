@@ -7,9 +7,11 @@ import IconTiktok from "@public/images/icons/IconTiktok"
 import IconYoutube from "@public/images/icons/IconYoutube"
 import { useTranslation } from "next-i18next"
 import { Link } from "react-scroll"
+import { useRouter } from "next/router"
 
 const Banner = () => {
   const { t } = useTranslation()
+  const router = useRouter()
   return (
     <div
       className="w-full"
@@ -110,26 +112,17 @@ const Banner = () => {
               <IconTiktok />
             </div>
           </div>
-          <Link
-            activeClass="active"
-            to="contactUs"
-            spy={true}
-            smooth={true}
-            hashSpy={true}
-            offset={-100}
-            duration={1000}
-            isDynamic={true}
-            ignoreCancelEvents={false}
+          <div
+            className="w-[180px] h-[60px] md:w-[270px] md:h-[72px] rounded-[64px] text-center items-center flex justify-center bg-primary text-white text-[20px] mdtext-[24px] Mulish-500 leading-[30px] cursor-pointer relative mb-[30px]"
+            style={{
+              boxShadow: "3px 7px 15px 0px rgba(211, 17, 17, 0.25)"
+            }}
+            onClick={() => {
+              router.push("/contact-us")
+            }}
           >
-            <div
-              className="w-[180px] h-[60px] md:w-[270px] md:h-[72px] rounded-[64px] text-center items-center flex justify-center bg-primary text-white text-[20px] mdtext-[24px] Mulish-500 leading-[30px] cursor-pointer relative mb-[30px]"
-              style={{
-                boxShadow: "3px 7px 15px 0px rgba(211, 17, 17, 0.25)"
-              }}
-            >
-              Contact us
-            </div>
-          </Link>
+            Contact us
+          </div>
           <img
             src={BannerImage3.src}
             alt="banner3"

@@ -171,6 +171,7 @@ const HeaderMobile = ({ id, visible, setVisible }: any) => {
             <div
               onClick={() => {
                 onClose()
+                router.push("/contact-us")
               }}
               className="px-[24px] flex justify-center mt-auto mb-0 py-[12px] rounded-[44px] bg-[#EBF8F3] flex gap-[8px] text-[16px] leading-[24px] text-secondary border-secondary border border-secondary cursor-pointer"
             >
