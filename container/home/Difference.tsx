@@ -24,7 +24,7 @@ const Differences = () => {
     },
     {
       order: "04",
-      name: "multi-platform",
+      name: "Multi-platform",
       desc: "We create on many different platforms."
     }
   ]
