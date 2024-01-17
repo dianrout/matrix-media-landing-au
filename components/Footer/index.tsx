@@ -103,7 +103,7 @@ const Footer = () => {
             <div className="flex gap-2 text-text-desc Mulish-500 text-[16px] leading-[27px] mb-[16px]">
               <IconEmail className="w-[20px]" />
               <a href="mailto:someone@example.com">
-                contact@hntdnetwork.com.au
+                support@hntdnetwork.com.au
               </a>
             </div>
             <div className="flex gap-2 text-text-desc Mulish-500 text-[16px] leading-[27px]">

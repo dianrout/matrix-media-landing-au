@@ -41,7 +41,7 @@ const ContactUsContainer = () => {
                 fill="white"
               />
             </svg>
-            contact@hntdnetwork.com.au
+            support@hntdnetwork.com.au
           </div>
           <div className="flex gap-2 items-center text-white text-[20px] Mulish-700">
             <svg
