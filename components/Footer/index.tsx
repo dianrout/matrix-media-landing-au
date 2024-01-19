@@ -97,9 +97,9 @@ const Footer = () => {
             <h2 className="text-[16px] Mulish-600 leading-[24px] mb-[16px]">
               {t("common.contact_us")}
             </h2>
-            <div className="flex gap-2 text-text-desc Mulish-500 text-[16px] leading-[27px] mb-[16px]">
+            {/* <div className="flex gap-2 text-text-desc Mulish-500 text-[16px] leading-[27px] mb-[16px]">
               <Iconphone className="w-[20px]" /> 0327639182
-            </div>
+            </div> */}
             <div className="flex gap-2 text-text-desc Mulish-500 text-[16px] leading-[27px] mb-[16px]">
               <IconEmail className="w-[20px]" />
               <a href="mailto:someone@example.com">
